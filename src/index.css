@@ -1,0 +1,13 @@
+/*footer-font*/
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+
+/*navbar-font*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*landing-font*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
