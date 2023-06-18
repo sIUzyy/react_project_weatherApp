@@ -2,19 +2,24 @@ const info = [
   'A weather API-based platform provides up-to-date weather information. ',
   'To access weather information, please enter the location you would like to search in the provided search bar.',
 ]
-
+//imported the 'useContext' this is essential especially when creating a context API
 import React,{ useContext } from 'react'
 import image from '../assets/main.webp'
+
+//imported the InfoContext that we created in dataContext.jsx
 import { InfoContext } from '../context/dataContext'
 
 
 const Main = () => {
 
+  //called the data, and showDefault state that we created in dataContext.jsx
   const { data, showDefault } = useContext(InfoContext)
   
 
   return (
     <div className='h-screen flex justify-center items-center bg-cover bg-center' style={{ backgroundImage: `url(${image})` }}>
+      
+      {/*we set the 'showDefault' by 'true' now if the user check our website the first thing they will see is the 'Welcome to Skycast' message, unless they search for a location now the message will be hidden.*/}
       {showDefault ? (
         <div className='text-center'>
           <div>
